@@ -1,16 +1,15 @@
-import { render } from 'preact';
-import { Text, View } from 'react-native';
+import { render } from "preact";
+import { Text, View } from "react-native";
 
-import './index.css';
+import "./index.css";
 
 export function App() {
-	return (
-		<View>
-			<p className="italic">This is styled by tailwind</p>
-			<Text className="bold">This is not</Text>
-		</View>
-	);
+  return (
+    <View>
+      <p className="italic text-black">This is styled by tailwind</p>
+      <Text className="bold text-red-500">This is not</Text>
+    </View>
+  );
 }
 
-
-render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById("app"));
