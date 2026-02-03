@@ -10,12 +10,12 @@
     "@tailwindcss/vite": "^4.1.18",
     "preact": "^10.26.9",
     "react-native-web": "^0.21.2",
-    "tailwindcss": "^4.1.18"
+    "tailwindcss": "^4.1.18",
+    "uniwind": "^1.3.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.2",
     "vite": "^7.0.4",
-    "vite-plugin-rnw": "^0.0.10",
-    "uniwind": "^1.3.0"
+    "vite-plugin-rnw": "^0.0.10"
   }
 }
