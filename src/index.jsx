@@ -7,7 +7,7 @@ export function App() {
   return (
     <View>
       <p className="italic text-black">This is styled by tailwind</p>
-      <Text className="bold text-red-500">This is not</Text>
+      <Text className="font-bold text-red-500">This is not</Text>
     </View>
   );
 }
