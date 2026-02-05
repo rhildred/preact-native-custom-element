@@ -42,4 +42,12 @@ export default defineConfig({
     }),
   ],
   server: { allowedHosts: true },
+    build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: "x-works.js",
+        assetFileNames: "x-works.[ext]",
+      },
+    }
+  }
 });

@@ -1,15 +1,19 @@
-# Native Wind
-## Problem recreation
+# preact-native-custom-element
+## with react-native-paper, tailwind and uniwind
 
 ```jsx
-		<View>
-			<p className="italic">This is styled by tailwind</p>
-			<Text className="bold">This is not</Text>
-		</View>
+    <PaperProvider>
+      <View className="p-[10px]">
+        <Text variant="headlineMedium">Welcome to React Native Paper with Vite!</Text>
+        <Button mode="contained" onPress={() => console.log('Pressed')} className="mt-[15px]">
+          Press me
+        </Button>
+      </View>
+    </PaperProvider>
 ```
 
-I know why this doesn't work. The styling with react-native is done in a different manner than classnames. I want it to work anyways, please. 
+1. I need html5 custom elements/web components that can be also be used in a react-native app on a phone. 
+2. I want to be able to style these components with tailwind.
+3. I need a richer array of components than the react-native core components.
 
-I understand that this is what nativewind is for. Unfortunately, I have struggled to make nativewind work with this stack. I was encouraged by [Daniel Williams work](https://github.com/dannyhw/react-native-web-vite-sb-examples) that it is indeed possible. Ideally I would like Daniel William's [vite-plugin-rnw](https://github.com/dannyhw/vite-plugin-rnw)  to make it work, "out of the box."
-
-My plan is to use this with [preact-custom-element](https://github.com/preactjs/preact-custom-element) to make components that can run in a progressive web app or in react-native for human machine interface work I am doing with students and some consulting customers.
+I was encouraged by [Daniel Williams work](https://github.com/dannyhw/react-native-web-vite-sb-examples) that it is indeed possible for me to have what I need. Thanks to Daniel Williams help with uniwind as the glue for this I now have it working. I hope that others, including my students at Wilfrid Laurier university, will be able to also use this to make components that can be used in progressive web apps or in react native.
